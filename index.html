@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Beautiflie</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/modale.css">
+    <script src="https://kit.fontawesome.com/14273d579a.js" crossorigin="anonymous"></script>
+    <script src="scripts/panier.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header_section" style="height: auto !important;">
+            <div class="container-fluid" style="height: auto !important;">
+               <nav class="navbar navbar-light bg-light justify-content-between" style="height: auto !important;">
+                  <div id="mySidenav" class="sidenav">
+                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                     <a href="index.html">Home</a>
+                     <a href="#">Products</a>
+                     <a href="#">About</a>
+                     <a href="#">Client</a>
+                     <a href="#">Contact</a>
+                     <span class="right-shopcart"><a href="paiement.html"><img src="images/bag-icon.png"><span class="right-cart-number panier right-cart-num"  style="top:15px; left:8px;">0</span></a></span>
+                     <a href="#"><img src="images/search-icon.png"></a>
+                  </div>
+                  <span class="toggle_icon" onclick="openNav()"><img src="images/toggle-icon.png"></span>
+                  <a class="logo" href="index.html"><img src="images/logo.png"></a>
+                  <form class="form-inline ">
+                     <div class="login_text">
+                        <ul>
+                           <li><a href="#"><img src="images/user-icon.png"></a></li>
+                           <li class="right-shopcart"><a href="paiement.html"><img src="images/bag-icon.png"><span class="right-cart-number panier right-cart-num">0</span></a></li>
+                           <li><a href="#"><img src="images/search-icon.png"></a></li>
+                        </ul>
+                     </div>
+                  </form>
+               </nav>
+            </div>
+         </div>
+       </header>
+    <main>
+        <div class="banner_section layout_padding">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div>
+                    <div class="container">
+                        <div class="row">
+                        <div class="col-sm-6">
+                            <h1 class="banner_taital">Beauty <br>Kit</h1>
+                            <p class="banner_text">Ncididunt ut labore et
+    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+    ullamco laboris nisi ut aliquip ex ea commodo</p>
+                            <div class="read_bt"><a href="#">Buy Now</a></div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="banner_img"><img src="images/banner-img.png"></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="product_section layout_padding">
+            <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="product_taital">Our Products</h1>
+                    <p class="product_text">incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                </div>
+            </div>
+            <div class="product_section_2 layout_padding">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="product_box">
+                        <h4 class="bursh_text">Beauty Bursh 1</h4>
+                        <p class="lorem_text">incididunt ut labore et dolore magna aliqua. Ut enim </p>
+                        <img src="images/img-1.png" class="image_1">
+                        <div class="btn_main">
+                            <div class="buy_bt">
+                                <ul>
+                                    <li class="active modal-trigger produits" id="1"><button type="button">Ajouter au panier</button></li>
+                                </ul>
+                            </div>
+                            <h3 class="price_text">Price $15</h3>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="product_box">
+                        <h4 class="bursh_text">Beauty Bursh 2</h4>
+                        <p class="lorem_text">incididunt ut labore et dolore magna aliqua. Ut enim </p>
+                        <img src="images/img-2.png" class="image_1">
+                        <div class="btn_main">
+                            <div class="buy_bt">
+                                <ul>
+                                    <li class="active modal-trigger produits" id="2"><button type="button">Ajouter au panier</button></li>
+                                </ul>
+                            </div>
+                            <h3 class="price_text">Price $15</h3>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="product_box">
+                        <h4 class="bursh_text">Beauty Bursh 3</h4>
+                        <p class="lorem_text">incididunt ut labore et dolore magna aliqua. Ut enim </p>
+                        <img src="images/img-3.png" class="image_1">
+                        <div class="btn_main">
+                            <div class="buy_bt">
+                                <ul>
+                                    <li class="active modal-trigger produits" id="3"><button type="button">Ajouter au panier</button></li>
+                                </ul>
+                            </div>
+                            <h3 class="price_text">Price $15</h3>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="product_box">
+                        <h4 class="bursh_text">Beauty Bursh 4</h4>
+                        <p class="lorem_text">incididunt ut labore et dolore magna aliqua. Ut enim </p>
+                        <img src="images/img-4.png" class="image_1">
+                        <div class="btn_main">
+                            <div class="buy_bt">
+                                <ul>
+                                    <li class="active modal-trigger produits" id="4"><button type="button">Ajouter au panier</button></li>
+                                </ul>
+                            </div>
+                            <h3 class="price_text">Price $15</h3>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="product_box">
+                        <h4 class="bursh_text">Beauty Bursh 5</h4>
+                        <p class="lorem_text">incididunt ut labore et dolore magna aliqua. Ut enim </p>
+                        <img src="images/img-5.png" class="image_1">
+                        <div class="btn_main">
+                            <div class="buy_bt">
+                                <ul>
+                                    <li class="active modal-trigger produits" id="5"><button type="button">Ajouter au panier</button></li>
+                                </ul>
+                            </div>
+                            <h3 class="price_text">Price $20</h3>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="product_box">
+                        <h4 class="bursh_text">Beauty Bursh 6</h4>
+                        <p class="lorem_text">incididunt ut labore et dolore magna aliqua. Ut enim </p>
+                        <img src="images/img-6.png" class="image_1">
+                        <div class="btn_main">
+                            <div class="buy_bt">
+                                <ul>
+                                    <li class="active modal-trigger produits" id="6"><button type="button">Ajouter au panier</button></li>
+                                </ul>
+                            </div>
+                            <h3 class="price_text">Price $20</h3>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="product_box">
+                        <h4 class="bursh_text">Beauty Bursh 7</h4>
+                        <p class="lorem_text">incididunt ut labore et dolore magna aliqua. Ut enim </p>
+                        <img src="images/img-7.png" class="image_1">
+                        <div class="btn_main">
+                            <div class="buy_bt">
+                                <ul>
+                                    <li class="active modal-trigger produits" id="7"><button type="button">Ajouter au panier</button></li>
+                                </ul>
+                            </div>
+                            <h3 class="price_text">Price $20</h3>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="product_box">
+                        <h4 class="bursh_text">Beauty Bursh 8</h4>
+                        <p class="lorem_text">incididunt ut labore et dolore magna aliqua. Ut enim </p>
+                        <img src="images/img-8.png" class="image_1">
+                        <div class="btn_main">
+                            <div class="buy_bt">
+                                <ul>
+                                    <li class="active modal-trigger produits" id="8"><button type="button">Ajouter au panier</button></li>
+                                </ul>
+                            </div>
+                            <h3 class="price_text">Price $20</h3>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="product_box">
+                        <h4 class="bursh_text">Beauty Bursh 9</h4>
+                        <p class="lorem_text">incididunt ut labore et dolore magna aliqua. Ut enim </p>
+                        <img src="images/img-9.png" class="image_1">
+                        <div class="btn_main">
+                            <div class="buy_bt">
+                                <ul>
+                                    <li class="active modal-trigger produits" id="9"><button type="button">Ajouter au panier</button></li>
+                                </ul>
+                            </div>
+                            <h3 class="price_text">Price $30</h3>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="product_box">
+                        <h4 class="bursh_text">Beauty Bursh 10</h4>
+                        <p class="lorem_text">incididunt ut labore et dolore magna aliqua. Ut enim </p>
+                        <img src="images/img-10.png" class="image_1">
+                        <div class="btn_main">
+                            <div class="buy_bt">
+                                <ul>
+                                    <li class="active modal-trigger produits" id="10"><button type="button">Ajouter au panier</button></li>
+                                </ul>
+                            </div>
+                            <h3 class="price_text">Price $30</h3>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="product_box">
+                        <h4 class="bursh_text">Beauty Bursh 11</h4>
+                        <p class="lorem_text">incididunt ut labore et dolore magna aliqua. Ut enim </p>
+                        <img src="images/img-11.png" class="image_1">
+                        <div class="btn_main">
+                            <div class="buy_bt">
+                                <ul>
+                                    <li class="active modal-trigger produits" id="11"><button type="button">Ajouter au panier</button></li>
+                                </ul>
+                            </div>
+                            <h3 class="price_text">Price $30</h3>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="product_box">
+                        <h4 class="bursh_text">Beauty Bursh 12</h4>
+                        <p class="lorem_text">incididunt ut labore et dolore magna aliqua. Ut enim </p>
+                        <img src="images/img-12.png" class="image_1">
+                        <div class="btn_main">
+                            <div class="buy_bt">
+                                <ul>
+                                    <li class="active modal-trigger produits" id="12"><button type="button">Ajouter au panier</button></li>
+                                </ul>
+                            </div>
+                            <h3 class="price_text">Price $30</h3>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="seemore_bt"><a href="#">See More</a></div>
+            </div>
+            </div>
+        </div>
+        <div class="about_section layout_padding">
+            <div class="container">
+            <div class="about_section_main">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="about_taital_main">
+                        <h1 class="about_taital">About Our beauty sotore</h1>
+                        <p class="about_text">labore et dolore magna 
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+    laboris nisi ut aliquip ex ea commodo consequatlabore et dolore magna 
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+    laboris nisi ut aliquip ex ea commodo consequatlabore et dolore magna 
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+    laboris nisi ut aliquip ex ea commodo consequat</p>
+                        <div class="readmore_bt"><a href="#">Read More</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div><img src="images/about-img.png" class="image_3"></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="customer_section layout_padding">
+            <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="customer_taital">What says customers</h1>
+                </div>
+            </div>
+            <div id="main_slider" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <div class="client_section_2">
+                        <div class="client_main">
+                            <div class="client_left">
+                                <div class="client_img"><img src="images/client-img.png"></div>
+                            </div>
+                            <div class="client_right">
+                                <h3 class="name_text">Jonyro</h3>
+                                <p class="dolor_text">consectetur 
+    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation  eu </p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="client_section_2">
+                        <div class="client_main">
+                            <div class="client_left">
+                                <div class="client_img"><img src="images/client-img.png"></div>
+                            </div>
+                            <div class="client_right">
+                                <h3 class="name_text">Jonyro</h3>
+                                <p class="dolor_text">consectetur 
+    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation  eu </p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="client_section_2">
+                        <div class="client_main">
+                            <div class="client_left">
+                                <div class="client_img"><img src="images/client-img.png"></div>
+                            </div>
+                            <div class="client_right">
+                                <h3 class="name_text">Jonyro</h3>
+                                <p class="dolor_text">consectetur 
+    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation  eu </p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+                <i class="fa fa-angle-left"></i>
+                </a>
+                <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+                <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+            </div>
+        </div>
+        <div class="contact_section layout_padding">
+            <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="contact_taital">Get In Touch</h1>
+                    <p class="contact_text">Consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+    enim ad minim veniam, quis nostrud exercitation  eu </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="contact_main">
+                        <div class="contact_bt"><a href="#">Contact Form</a></div>
+                        <div class="newletter_bt"><a href="#">Newletter</a></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="map_main">
+            <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d861.0423381753288!2d1.1935229522178101!3d6.202036972781446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10215986d9510923%3A0x4a76161b0e832512!2sEdpage!5e0!3m2!1sfr!2stg!4v1692724022154!5m2!1sfr!2stg" width="600" height="450" style="border:0; width:100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            </div>
+            <div class="modal-container">
+
+                <div class="overlay modal-trigger"></div>
+               
+                <div class="modale" role="dialog" aria-labelledby="modalTitle" aria-describedby="dialogDesc">
+                  <button 
+                  aria-label="close modal"
+                  class="close-modal modal-trigger">X</button>
+                  <h1 id="modalTitle">Ajout au panier</h1>
+                  <p id="dialogDesc"></p>
+                </div>
+          
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_section layout_padding">
+            <div class="container">
+            <div class="footer_logo"><a href="index.html"><img src="images/footer-logo.png"></a></div>
+            <div class="contact_section_2">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h3 class="address_text">Contact Us</h3>
+                        <div class="address_bt">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i><span class="padding_left10">Address : Loram Ipusm</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                <i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left10">Call : +01 1234567890</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left10">Email : demo@gmail.com</span>
+                                </a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="footer_logo_1"><a href="index.html"><img src="images/footer-logo.png"></a></div>
+                        <p class="dummy_text">commodo consequat. Duis aute 
+    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="main">
+                        <h3 class="address_text">Best Products</h3>
+                        <p class="ipsum_text">dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social_icon">
+                <ul>
+                    <li>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+            <div class="copyright_section">
+                <div class="container">
+                <p class="copyright_text">2023 All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>   
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
